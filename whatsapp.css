@@ -1,0 +1,51 @@
+.whatsapp-icon {
+    position: fixed;
+    bottom: 6px;
+    right: 6px;
+    z-index: 100;
+}
+
+.whatsapp-icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.whatsapp_effect {
+    margin-left: 25px;
+    margin-top: 25px;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 10;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    /* Effect ko image ke peeche rakhne ke liye */
+    animation: glowing 1300ms infinite;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 5px darkgreen;
+    }
+
+    50% {
+        box-shadow: 0 0 50px darkgreen;
+    }
+
+    100% {
+        box-shadow: 0 0 5px darkgreen;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .whatsapp-icon img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .whatsapp-icon {
+        bottom: 1px;
+        right: -4px;
+    }
+}
